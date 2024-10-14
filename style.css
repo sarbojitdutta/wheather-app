@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(194, 94%, 43%);
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherFrom {
+    margin: 20px;
+}
+
+.cityInput {
+    padding: 10px;
+    font-size: 2 rem;
+    border: 2px solid hsl(0, 0%, 20%, 0.3);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2 rem;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(209, 98%, 18%);
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(209, 98%, 28%);
+}
+
+.Card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 400px;
+    height: 490px;
+    text-align: center;
+    font-size: larger;
+}
+h1{
+    font-size: 55px;
+    padding: 5px;
+    margin: 0;
+    color: black;
+}
+p{
+    /* font-size: 1.5rem; */
+    margin: 5px 0;
+}
+.weatherEmoji{
+    font-size: 6rem;
+    padding: 5px; 
+}
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold
+}
+.humidityDisplay, .desDisplay, .windDisplay, .pressureDisplay{
+    margin:12px;
+}  
+.errorDisplay{
+    margin: 12px;
+    font-size: 1.5rem;
+}
